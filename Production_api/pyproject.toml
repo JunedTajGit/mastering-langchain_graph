@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langc-course"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12.7"
+dependencies = [
+    "bs4>=0.0.2",
+    "fastapi>=0.135.1",
+    "langchain>=1.2.10",
+    "langchain-anthropic>=1.3.4",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.1",
+    "langchain-core>=1.2.16",
+    "langchain-google-genai>=4.2.1",
+    "langchain-openai>=1.1.10",
+    "langfuse>=4.0.0",
+    "langgraph>=1.0.10",
+    "langgraph-checkpoint-sqlite>=3.0.3",
+    "pydantic-settings>=2.13.1",
+    "pytest>=9.0.2",
+    "python-dotenv>=1.2.2",
+    "sentence-transformers>=5.2.3",
+    "slowapi>=0.1.9",
+    "tiktoken>=0.12.0",
+    "torch>=2.0.0,<2.10.0",
+    "uvicorn>=0.41.0",
+]
+
+[tool.setuptools]
+py-modules = [
+    "advanced_rag",
+    "chains_v1",
+    "core_concepts",
+    "document_loaders",
+    "embeddings",
+    "embeddings_deep",
+    "main",
+    "output_parsers_demo",
+    "output_parsers_final",
+    "prompt_messages",
+    "prompt_templates_all",
+    "rag_pipeline",
+    "smart_bot_section1",
+    "text_splitters",
+    "vector_stores",
+    "working_with_llms",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.0.2",
+]
